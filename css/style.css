@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    height: 100vh;
+}
+canvas {
+    display: block;
+}
+
+.Desc {
+    position: absolute;
+
+    text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+    -webkit-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+    -moz-text-shadow:0px 1px 0 rgb(255,255,255),0px -1px 0 rgb(255,255,255),1px 0px 0 rgb(255,255,255),-1px 0px 0 rgb(255,255,255),1px 1px 0 rgb(255,255,255),1px -1px 0 rgb(255,255,255),-1px 1px 0 rgb(255,255,255),-1px -1px 0 rgb(255,255,255);
+    font-size:20px;
+    color:rgb(0, 0, 0);
+    font-family:Verdana, Geneva, sans-serif;
+
+}
+
+#Loading {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.addbtn {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.addbtn:hover {
+    background: #cacaca;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 26px;
+}
+
+.closebtn:hover {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 26px;
+    color: #cacaca;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+#addform {
+    padding-left: 10px;
+}
+
+.descDisplay {
+
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: -2500px;
+    border-radius: 3% 3% 0% 0%;
+    transition: bottom 0.5s ease;
+    
+}
+
+/* Active class */
+.descDisplay.active {
+    bottom: 0;
+}
+
+/* Close btn */
+.descDisplay.close {
+    position: absolute;
+    bottom: -250px;
+    font-size: 36px;
+}
+
+#progressDiv{
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transition: visibility 2s, opacity 1s linear;
+}
